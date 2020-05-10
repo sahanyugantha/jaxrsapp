@@ -14,8 +14,12 @@
 	
 </head>
 <body>
+<<<<<<< HEAD
     <h2>Solent Cohort 01</h2>
     <h2>This is a good batch</h2>
+=======
+    <h2>Solent Cohort 01 @BCAS CITY CAMPUS</h2>
+>>>>>>> devlopment
     <h3>These are car details</h3>
     
    	<table>
