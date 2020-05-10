@@ -9,7 +9,7 @@ public class Configs {
 		String connURL = "jdbc:mysql://localhost:3306/cardb";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection conn = DriverManager.getConnection(connURL, "root", "mysql");
+		Connection conn = DriverManager.getConnection(connURL, "root", "12345");
 		return conn;
 	}
 
