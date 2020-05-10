@@ -14,7 +14,7 @@
 	
 </head>
 <body>
-    <h2>Solent Batch 01</h2>
+    <h2>Solent Cohort 01</h2>
     <h3>These are car details</h3>
     
    	<table>
