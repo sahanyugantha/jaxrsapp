@@ -1,12 +1,14 @@
 package com.sahan.jaxrsapp.model;
 
+import com.sahan.jaxrsapp.dao.USER_ROLES;
+
 public class User {
 	
 	private int id;
 	private String username;
 	private String email;
 	private String password;
-	private String role;
+	private USER_ROLES role;
 	
 	
 	public User() {
@@ -14,7 +16,7 @@ public class User {
 	}
 
 
-	public User(int id, String username, String email, String password, String role) {
+	public User(int id, String username, String email, String password, USER_ROLES role) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -64,12 +66,12 @@ public class User {
 	}
 
 
-	public String getRole() {
+	public USER_ROLES getRole() {
 		return role;
 	}
 
 
-	public void setRole(String role) {
+	public void setRole(USER_ROLES role) {
 		this.role = role;
 	}
 	

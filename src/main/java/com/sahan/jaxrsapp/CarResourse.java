@@ -97,7 +97,7 @@ public class CarResourse {
 		car.setColor(color);
 		car.setType(type);
 		
-		boolean result = CarDao.getInstance().add(car);
+		//boolean result = CarDao.getInstance().add(car);
 	
 	}
 

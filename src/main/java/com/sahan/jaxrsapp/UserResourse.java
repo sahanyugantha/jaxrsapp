@@ -13,6 +13,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.google.gson.Gson;
+import com.sahan.jaxrsapp.dao.USER_ROLES;
 import com.sahan.jaxrsapp.model.User;
 
 @Path("users")
@@ -73,13 +74,13 @@ public class UserResourse {
 	public List<User> fetchUsers(){
 		List<User> userList = new ArrayList<User>();
 		
-		User user = new User(1, "Jon", "jon@bcas.lk", "123", "ADMIN");
+		User user = new User(1, "Jon", "jon@bcas.lk", "123", USER_ROLES.ADMIN);
 		userList.add(user);
 		
-		User user1 = new User(2, "Anne", "anne@bcas.lk", "123", "STANDARD");
+		User user1 = new User(2, "Anne", "anne@bcas.lk", "123", USER_ROLES.ANONYMOUS);
 		userList.add(user1);
 		
-		User user2 = new User(3, "Sam", "sam@bcas.lk", "123", "STANDARD");
+		User user2 = new User(3, "Sam", "sam@bcas.lk", "123", USER_ROLES.STANDARD);
 		userList.add(user2);
 		
 		return userList;
