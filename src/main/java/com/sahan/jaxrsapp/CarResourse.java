@@ -13,6 +13,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.google.gson.Gson;
 import com.sahan.jaxrsapp.model.Car;
 import com.sahan.jaxrsapp.dao.CarDao;
@@ -27,6 +30,7 @@ public class CarResourse {
 //		return "Yes Working!";
 //	}
 	
+	private static Logger logger = LogManager.getLogger(CarResourse.class);
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -45,15 +49,29 @@ public class CarResourse {
 			List<Car> cars = (List<Car>)object; //Casting.
 			
 			String jsonString = gson.toJson(cars);
+			
+			
+			logger.trace("T-- Fetch all cars successfully");
+			logger.debug("D--Fetch all cars successfully");
+			logger.info("I--Fetch all cars successfully");
+			logger.warn("W--Fetch all cars successfully");
+			logger.error("E--Fetch all cars successfully");
+			logger.fatal("F--Fetch all cars successfully");
+			
+			
 			return Response
 					.status(200)
 					.entity(jsonString)
 					.build();
+						
 		} else {
 			@SuppressWarnings("unchecked")
 			Map<String, String> errMsg = (Map<String, String>)object; //Casting.
 			
 			String jsonString = gson.toJson(errMsg);
+			
+			logger.error("Couldn't fetch all cars");
+			
 			return Response
 					.status(200)
 					.entity(jsonString)
