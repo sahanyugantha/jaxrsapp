@@ -11,7 +11,7 @@ import com.sahan.jaxrsapp.model.User;
 public class LoginTest {
 	
 	private String email = "sahan@bcas.lk";
-	private String password = "1234";
+	private String password = "123";
 	
 	@Test
 	public void LoginChecker() {
