@@ -24,7 +24,7 @@ public class LoginTest {
 		
 		User actual = UserDao.getInstance().LoginChecker(email, password);
 		
-		assertNotEquals(unexpected, actual);
+		assertNotEquals(unexpected, null);
 		
 		logger.trace("T--Login test was done");
 		logger.debug("D--Login test was done");

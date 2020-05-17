@@ -52,7 +52,7 @@ public class CarResourse {
 			
 			
 			logger.trace("T-- Fetch all cars successfully");
-			logge.debug("D--Fetch all cars successfully");
+			logger.debug("D--Fetch all cars successfully");
 			logger.info("I--Fetch all cars successfully");
 			logger.warn("W--Fetch all cars successfully");
 			logger.error("E--Fetch all cars successfully");
