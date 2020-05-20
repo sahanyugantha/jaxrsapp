@@ -17,22 +17,22 @@ public class LoginTest {
 	
 	private static Logger logger = LogManager.getLogger(LoginTest.class);
 	
-	@Test
-	public void LoginChecker() {
-		
-		User unexpected = null;
-		
-		User actual = UserDao.getInstance().LoginChecker(email, password);
-		
-		assertNotEquals(unexpected, actual);
-		
-		logger.trace("T--Login test was done");
-		logger.debug("D--Login test was done");
-		logger.info("I--Login test was done");
-		logger.warn("W--Login test was done");
-		logger.error("E--Login test was done");
-		logger.fatal("F--Login test was done");
-		
-	}
+//	@Test
+//	public void LoginChecker() {
+//		
+//		User unexpected = null;
+//		
+//		User actual = UserDao.getInstance().LoginChecker(email, password);
+//		
+//		assertNotEquals(unexpected, actual);
+//		
+//		logger.trace("T--Login test was done");
+//		logger.debug("D--Login test was done");
+//		logger.info("I--Login test was done");
+//		logger.warn("W--Login test was done");
+//		logger.error("E--Login test was done");
+//		logger.fatal("F--Login test was done");
+//		
+//	}
 
 }
