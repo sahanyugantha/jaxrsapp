@@ -4,6 +4,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -80,6 +81,8 @@ public class CarResourse {
 		
 	}
 	
+	//***** USING G METHOD. ******//
+	
 	@GET
 	@Path("{id}")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -98,6 +101,28 @@ public class CarResourse {
 				.build();
 		
 	}
+	
+	//***** USING POST METHOD. ******//
+
+	@POST
+	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getACarPost(@FormParam("id") String id) {
+		
+		int carid = Integer.parseInt(id);
+		
+		Car car = CarDao.getInstance().get(carid);
+		
+		Gson gson = new Gson();
+		String jsonString = gson.toJson(car);
+		
+		return Response
+				.status(200)
+				.entity(jsonString)
+				.build();
+		
+	}
+	
 	
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)

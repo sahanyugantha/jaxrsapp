@@ -28,6 +28,7 @@
    				<th>Year</th>
    				<th>Color</th>
    				<th>Type</th>
+   				<th>Link</th>
    			</tr>
    		</thead>
    		<tbody>
@@ -72,11 +73,13 @@
 									<td><% out.print(obj.get("year").getAsString()); %></td>
 									<td><% out.print(obj.get("color").getAsString()); %></td>
 									<td><% out.print(obj.get("type").getAsString()); %></td>
+									<td><a href="singlecar.jsp?id=<% out.print(obj.get("id").getAsString()); %>">Open</a></td>
 								</tr>
 							<% 
 						}
 						
 					}
+					httpURLConnection.disconnect();
    					
    				}catch(Exception e){
    					e.printStackTrace();
