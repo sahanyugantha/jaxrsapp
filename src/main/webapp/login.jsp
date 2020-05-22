@@ -7,6 +7,7 @@
 <title>Login</title>
 </head>
 <body>
+<!-- comment -->
 	<form action="http://localhost:8080/jaxrsapp/carapi/users/login" method="post">
 		<label>Enter email</label><br/>
 		<input type="email" name="uemail" ><br/>
