@@ -33,7 +33,7 @@
    		</thead>
    		<tbody>
    			<% 
-   			  	final String API_URL = "https://jaxrsapp.herokuapp.com:8080/jaxrsapp/carapi/cars";
+   			  	final String API_URL = "https://jaxrsapp.herokuapp.com/jaxrsapp/carapi/cars";
    			
    				//Fetching data from API.
    				try{
