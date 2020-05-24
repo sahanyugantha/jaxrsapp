@@ -7,10 +7,16 @@ public class Configs {
 	
 	public static Connection getDbConnection() throws ClassNotFoundException, SQLException {
 		
-		String connURL = "jdbc:mysql://localhost:3306/cardb";
+//		String connURL = "jdbc:mysql://localhost:3306/cardb";
+//		
+//		Class.forName("com.mysql.cj.jdbc.Driver");
+//		Connection conn = DriverManager.getConnection(connURL, "root", "mysql");
+//		return conn;
+//		
+		String connURL = "jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_677cfadb2807d1c";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection conn = DriverManager.getConnection(connURL, "root", "mysql");
+		Connection conn = DriverManager.getConnection(connURL, "b388ac2ebe8984", "0668a5ce");
 		return conn;
 	}
 

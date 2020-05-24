@@ -6,4 +6,7 @@ orbs:
 workflows:
   maven_test:
     jobs:
-      - maven/test # checkout, build, test, and upload test results
+      - maven/test: # checkout, build, test, and upload test results
+          filters:
+              branches:
+                only : master
