@@ -15,7 +15,7 @@
 </head>
 <body>
     <h2>Solent Cohort 01</h2>
-    <h2><a href="login.jsp"  target="_blank">Click here to login</a></h2>
+    <h2><a id="sample" href="login.jsp"  target="_blank">Click here to login</a></h2>
     <h2>Solent Cohort 01 @BCAS CITY CAMPUS</h2>
     <h3>These are car details</h3>
     

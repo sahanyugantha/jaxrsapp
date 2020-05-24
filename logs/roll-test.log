@@ -1,3 +1,4 @@
-2020-05-17 11:47:27,061 WARN j.LoginTest [main] W--Login test was done
-2020-05-17 11:47:27,066 ERROR j.LoginTest [main] E--Login test was done
-2020-05-17 11:47:27,067 FATAL j.LoginTest [main] F--Login test was done
+2020-05-24 12:38:26,623 DEBUG i.n.u.Recycler [AsyncHttpClient-3-1] -Dio.netty.recycler.linkCapacity: 16
+2020-05-24 12:38:26,625 DEBUG i.n.u.Recycler [AsyncHttpClient-3-1] -Dio.netty.recycler.ratio: 8
+2020-05-24 12:38:27,570 DEBUG i.n.u.i.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0xb9897d5210b99ccf
+2020-05-24 12:38:32,160 TRACE i.n.h.c.h.w.WebSocket08FrameEncoder [AsyncHttpClient-3-3] Encoding WebSocket Frame opCode=8 length=26
